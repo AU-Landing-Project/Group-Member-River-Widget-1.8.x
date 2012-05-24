@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Group Member River Widget</name>
+	<author>Matt Beckett</author>
+	<version>1.0</version>
+	<description>Adds a River widget to group pages showing member activities both inside and outside the group.</description>
+	<website>https://landing.athabascau.ca</website>
+	<copyright>(C) Athabasca University 2012</copyright>
+	<license>GNU Public License version 2</license>
+ 
+	<!-- All plugins must require either elgg_version or elgg_release. -->
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<requires>
+		<type>plugin</type>
+		<name>groups</name>
+	</requires>
+	<suggests>
+		<type>plugin</type>
+		<name>widget_manager</name>
+	</suggests>
+</plugin_manifest>

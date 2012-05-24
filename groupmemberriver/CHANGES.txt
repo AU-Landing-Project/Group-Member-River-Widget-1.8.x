@@ -1,0 +1,9 @@
+== Version History ==
+
+x.x:
+
+1.0 (05/24/2012):
+
+- Initial upgrade to 1.8
+- Removed default activity view as it's moved to core group module in 1.8
+- Removed direct db calls in favor of elgg's API
