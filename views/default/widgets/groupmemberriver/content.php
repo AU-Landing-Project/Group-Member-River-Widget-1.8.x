@@ -4,7 +4,14 @@
 $widget = $vars["entity"];
 $group = elgg_get_page_owner_entity();
 
-$members = get_group_members($group->guid);
+$members = elgg_get_entities_from_relationship(array(
+				'relationship' => 'member',
+				'relationship_guid' => $group->guid,
+				'inverse_relationship' => TRUE,
+				'type' => 'user',
+				'limit' => false,
+				'callback' => false
+));
 
 
 // create a comma delimited list of member guids for sql

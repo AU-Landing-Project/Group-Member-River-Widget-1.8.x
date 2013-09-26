@@ -2,6 +2,10 @@
 
 x.x:
 
+1.1 (09/26/13):
+- include all members in the activity
+- big efficiency fix for groups with lots of members
+
 1.0 (05/24/2012):
 
 - Initial upgrade to 1.8
