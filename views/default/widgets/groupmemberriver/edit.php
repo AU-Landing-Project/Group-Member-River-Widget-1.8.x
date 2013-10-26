@@ -26,3 +26,16 @@ $options = array(
 
 echo elgg_echo('groupmemberriver:widget:settings:activity_count') . "<br>";
 echo elgg_view('input/dropdown', $options) . "<br><br>";
+
+
+// what view to use?
+echo elgg_echo('groupmemberriver:widget:settings:viewtype') . '<br>';
+echo elgg_view('input/dropdown', array(
+	'name' => 'params[viewtype]',
+	'value' => $widget->viewtype ? $widget->viewtype : 'standard',
+	'options_values' => array(
+		'standard' => elgg_echo('groupmemberriver:viewtype:standard'),
+		'condensed' => elgg_echo('groupmemberriver:viewtype:condensed')
+	)
+));
+echo '<br><br>';

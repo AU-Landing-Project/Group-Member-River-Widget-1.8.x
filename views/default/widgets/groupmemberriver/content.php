@@ -55,5 +55,13 @@ switch ($widget->subset) {
 
 
 // display results
-echo elgg_list_river($options);
+if ($widget->viewtype == 'condensed') {
+	$path = elgg_get_view_location('river/elements/body');
+	elgg_set_view_location('river/elements/body', dirname(__FILE__) . '/');
+	echo elgg_list_river($options);
+	elgg_set_view_location('river/elements/body', $path);
+}
+else {
+	echo elgg_list_river($options);
+}
 

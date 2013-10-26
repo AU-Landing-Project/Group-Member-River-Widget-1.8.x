@@ -8,6 +8,9 @@ $english = array(
     'groupmemberriver:widget:description' => 'Group member activity',
 	'groupmemberriver:widget:settings:activity_count' => 'How many to show?',
 	'groupmemberriver:widget:settings:subset' => 'Which activities to show?',
+	'groupmemberriver:widget:settings:viewtype' => "Display which type of views?",
+	'groupmemberriver:viewtype:standard' => 'Standard',
+	'groupmemberriver:viewtype:condensed' => 'Condensed',
  );
 
 add_translation('en',$english);
